@@ -44,11 +44,20 @@ ul {
 button {
     text-align: center;
     padding:13px 40px;
+    border:1px solid transparent;
     background-color: #FFCA42;
     color:#1B3764;
-    border:none;
     font-family:'Cardo', serif;
     font-weight:400;
+    cursor: pointer;
+    transition:0.4s;
+    
+}
+
+button:hover {
+    background-color:transparent;
+    border:1px solid #FFCA42;
+    color:white;
 }
 
 .header button {
@@ -83,12 +92,16 @@ align-items: center;
 
 .social-media div {
     background-color:white;
+    border:1px solid transparent;
     width:30px;
     height:30px;
     background-repeat: no-repeat;
     background-position: center;
-    
-    
+}
+
+.social-media div:hover {
+    background-color:transparent;
+    border:1px solid #FFCA42;
 }
 
 .left {
@@ -107,14 +120,26 @@ align-items: center;
     background-size: 7px auto;
 }
 
+.facebook:hover {
+    background-image: url("images/facebook-white.png");
+}
+
 .twitter {
     background-image:url("images/twitter.png");
     background-size: 10px auto;
 }
 
+.twitter:hover {
+    background-image: url("images/twitter-white.png");
+}
+
 .linkedin {
     background-image: url("images/linkedin.png");
     background-size: 10px auto;
+}
+
+.linkedin:hover {
+    background-image: url("images/linkedin-white.png");
 }
 
 .right {
@@ -124,11 +149,16 @@ align-items: center;
     font-size:12px;
 }
 
-.nav ul{
+.nav ul {
     display:flex;
     align-items:center;
     gap:30px;
     font-family:'Inter', sans-serif;
+}
+
+.nav a:hover {
+    color:#FFCA42;
+    border-bottom:1px solid #FFCA42;
 }
 
 .nav-btn {
@@ -153,6 +183,14 @@ align-items: center;
 .nav-btn svg{
     position:relative;
     top:7px;
+}
+
+.nav-btn div:hover path{
+    stroke:#FFCA42;
+}
+
+.nav-btn div:hover p{
+    background-color:white;
 }
 
 .banner {
@@ -196,6 +234,13 @@ align-items: center;
     color:white;
     border-bottom:1px solid white;
     padding:10px 5px 2px 5px;
+    font-size:13px;
+}
+
+.btn-link:hover {
+    border:none;
+    color:#FFCA42;
+    border-bottom:1px solid #FFCA42;
 }
 
 .banner .btn {
@@ -303,6 +348,11 @@ align-items: center;
 .author-book button {
     background-color:white;
     border:1px solid #FFCA42;
+}
+
+.author-book button:hover{
+    background-color: #FFCA42;
+    color:#1B3764;
 }
 
 .about {
@@ -465,6 +515,11 @@ align-items: center;
     color:white;
 }
 
+.callout button:hover {
+    background-color: #FFCA42;
+    color:#1B3764;
+}
+
 .what-will-you-learn {
     display:flex;
     flex-direction:column;
@@ -586,9 +641,18 @@ align-items: center;
     text-decoration: underline;
 }
 
+.chapter a:hover {
+    color:#FFCA42;
+}
+
 .chapter button {
     padding-left: 70px;
     padding-right: 70px;
+}
+
+.chapter button:hover {
+    background-color: white;
+    color:#1B3764;
 }
 
 .testimonial {
@@ -694,6 +758,10 @@ width:95%;
 
 }
 
+.blog .card:hover {
+    width:120%;
+}
+
 .blog h3 {
     padding: 20px 20px 0 20px;
     font-size:16px;
@@ -721,6 +789,11 @@ width:95%;
     border-bottom: 1px solid #1B3764;
 }
 
+.blog a:hover {
+    color:#FFCA42;
+    border-color:#FFCA42;
+}
+
 .subscribe {
     margin:100px auto;
     width:50%;
@@ -744,10 +817,18 @@ width:95%;
 }
 
 .subscribe input {
-    border:none;
-    height:40px;
+    box-sizing: border-box;
+    border:3px solid transparent;
+    height:45px;
     width:70%;
     padding-left:15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.subscribe input[type=text]:focus {
+    border:3px solid #1B3764;
 }
 
 .subscribe input::placeholder {
@@ -767,6 +848,12 @@ width:95%;
     background-color: #1B3764;
     color:white;
     width:40%;
+}
+
+.subscribe button:hover {
+    background-color: #FFCA42;
+    color:#1B3764;
+    border-color:#1B3764;
 }
 
 .footer {
@@ -792,21 +879,42 @@ width:95%;
     border:1px solid #FFCA42;
 }
 
+.footer .social-media div:hover {
+    background-color: white;
+    border-color:white;
+}
+
 .footer .facebook {
     background-image: url("images/facebook-white.png");
+}
+
+.footer .facebook:hover{
+    background-image: url("images/facebook.png");
 }
 
 .footer .twitter {
     background-image: url("images/twitter-white.png");
 }
 
+.footer .twitter:hover {
+    background-image: url("images/twitter.png");
+}
+
 .footer .linkedin {
     background-image: url("images/linkedin-white.png") ;
+}
+
+.footer .linkedin:hover {
+    background-image: url("images/linkedin.png");
 }
 
 .footer .instagram {
     background-image: url("images/instagram-white.png");
     background-size:12px auto;
+}
+
+.footer .instagram:hover {
+    background-image: url("");
 }
 
 .footer ul a {
@@ -869,4 +977,8 @@ width:95%;
 .copyright span {
     width:auto;
     font-family: 'Inter', sans-serif;
+}
+
+.footer a:hover {
+    color:#FFCA42;
 }
