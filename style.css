@@ -72,6 +72,7 @@ button:hover {
 .header {
 display:flex;
 justify-content: space-between;
+flex-wrap:wrap;
 padding:20px 15% 20px 15%;
 margin:0;
 align-items: center;
@@ -106,6 +107,7 @@ align-items: center;
 
 .left {
     display:flex;
+    flex-wrap:wrap;
     align-items:center;
     gap:33px;
 }
@@ -144,6 +146,7 @@ align-items: center;
 
 .right {
     display:flex;
+    flex-wrap:wrap;
     align-items:center;
     gap:15px;
     font-size:12px;
@@ -195,6 +198,7 @@ align-items: center;
 
 .banner {
     display:flex;
+    flex-wrap:wrap;
     align-items:center;
     gap:30px;
     color:white;
@@ -245,6 +249,7 @@ align-items: center;
 
 .banner .btn {
     display:flex;
+    flex-wrap:wrap;
     align-items:center;
     gap:25px;
     padding:10px 0;
@@ -252,6 +257,7 @@ align-items: center;
 
 .details ul{
     display:flex;
+    flex-wrap:wrap;
     gap:0;
     margin-top:0;
     width:100%;
@@ -317,6 +323,7 @@ align-items: center;
 
 .author-book .content {
     display:flex;
+    flex-wrap:wrap;
     align-items:center;
     justify-content:center;
     gap:10px;
@@ -325,6 +332,7 @@ align-items: center;
 .author-book img {
     width:25%;
     height:auto;
+    min-width:200px;
 }
 
 .author-book .details ul {
@@ -334,6 +342,7 @@ align-items: center;
 
 .description {
     width:22%;
+    min-width:200px;
 }
 
 .description ul p{
@@ -358,6 +367,7 @@ align-items: center;
 .about {
     background-color: #F4F8FF;
     display:flex;
+    flex-wrap:wrap;
     align-items: center;
     justify-content: center;
     gap:100px;
@@ -417,6 +427,7 @@ align-items: center;
     background-color:#1B3764;
     padding:10px;
     width:85%;
+    min-width:250px;
 }
 
 .contact p {
@@ -450,6 +461,7 @@ align-items: center;
 
 .trusted-by .content {
     display:flex;
+    flex-wrap:wrap;
     justify-content: center;
     margin-top:-90px;
     gap:20px;
@@ -469,6 +481,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     width:15%;
+    min-width:150px;
     padding:10px;
 }
 
@@ -488,6 +501,7 @@ align-items: center;
 .callout {
     background-color: #1B3764;
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
     gap:30px;
@@ -507,6 +521,12 @@ align-items: center;
 
 .callout img {
     width: 47%;
+    min-width:300px;
+}
+
+.callout .content {
+    width:45%;
+    
 }
 
 .callout button {
@@ -527,8 +547,9 @@ align-items: center;
     margin-top:80px;
 
 }
-.container {
+.what-will-you-learn .container {
     display:flex;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: flex-start;
     margin:0 auto;
@@ -538,11 +559,12 @@ align-items: center;
     gap:30px;
 }
 
-.container .content {
+.what-will-you-learn .container .content {
     width:50%;
     display:flex;
     gap:25px;
     flex-wrap:wrap;
+    min-width:400px;
 }
 
 .list {
@@ -585,7 +607,7 @@ align-items: center;
     justify-content: center;
     flex-wrap:wrap;
     margin:-15px auto 50px auto;
-    width:80%;
+    width:85%;
     gap:20px;
 
 }
@@ -657,6 +679,7 @@ align-items: center;
 
 .testimonial {
     display:flex;
+    flex-wrap:wrap;
     gap:20px;
     align-items: center;
     margin:100px auto;
@@ -673,6 +696,7 @@ align-items: center;
 }
 .testimonial .content-left {
     width:35%;
+    min-width:200px;
 }
 .content-left h2 {
     width:70%;
@@ -690,6 +714,7 @@ width:95%;
 }
 .content-middle, .content-right {
     width:30%;
+    min-width:200px;
 }
 .testimonial .card {
     background-color: #1B3764;
@@ -739,6 +764,7 @@ width:95%;
     background-color: #F4F8FF;
     padding:70px 15% 100px 15%;
     display: flex;
+    
     flex-direction: column;
     align-items: center;
 }
@@ -747,19 +773,21 @@ width:95%;
 }
 .blog .content {
     display:flex;
+    flex-wrap:wrap;
     width:100%;
     gap:20px;
 }
 
 .blog .card {
     background: #FFF;
-    width:100%;
+    width:30%;
+    min-width:250px;
     box-shadow: 0px 35px 25px 0px rgba(4, 11, 20, 0.04);
 
 }
 
 .blog .card:hover {
-    width:120%;
+    width: 35%;
 }
 
 .blog h3 {
@@ -820,7 +848,8 @@ width:95%;
     box-sizing: border-box;
     border:3px solid transparent;
     height:45px;
-    width:70%;
+    width:60%;
+    min-width:250px;
     padding-left:15px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -840,6 +869,7 @@ width:95%;
     padding:10px;
     width:90%;
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     gap:7px;
 }
@@ -847,7 +877,8 @@ width:95%;
 .subscribe button{
     background-color: #1B3764;
     color:white;
-    width:40%;
+    width:30%;
+    min-width:125px;
 }
 
 .subscribe button:hover {
@@ -858,13 +889,15 @@ width:95%;
 
 .footer {
     background-color: #1B3764;
-    padding:20px 5%;
+    padding:20px 5px 20px 5%;
 }
 
 .footer .container {
     display:flex;
-    width:80%;
-    margin:0;
+    flex-wrap:wrap;
+    width:100%;
+    margin:0 auto;
+    justify-content: center;
     gap:0px;
 }
 
@@ -872,6 +905,7 @@ width:95%;
     color:white;
     font-size:16px;
     font-weight: 200;
+    width:200px;
 }
 
 .footer .social-media div{
@@ -928,16 +962,22 @@ width:95%;
     display:flex;
     flex-direction: column;
     gap:20px;
+    width:20%;
+    min-width:250px;
+    padding:20px 0;
+    
 }
 
 .footer ul {
     list-style-image: url("images/list-style.png");
     padding-left:20px;
     margin-top:-10px;
+    width:200px;
 }
 
 .footer ul li{
     padding:1.5px 5px;
+    width:200px;
 }
 
 
@@ -946,9 +986,10 @@ width:95%;
     font-family: 'Cardo', serif;
     color:white;
     font-size:12px;
+    width:40px;
+}
+.footer .adress span {
     width:70px;
-    
-    
 }
 .footer .logo span {
     font-size:20px;
@@ -981,4 +1022,44 @@ width:95%;
 
 .footer a:hover {
     color:#FFCA42;
+}
+
+@media screen and (max-width: 450px) {
+    .social-media {
+        display:none;
+    }
+    
+    .header {
+        padding:20px 1%;
+        flex-direction: column;
+        gap:15px;
+        align-items:center;
+    }
+
+    .header .right {
+        width:70%;
+        margin:0 auto;
+        gap:15px;
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding:2%;
+    }
+
+    .banner h1 {
+        width:100%;
+        padding:0;
+    }
+
+    .banner img {
+        display:none;
+    }
+    
+    .banner .btn {
+        flex-direction: column;
+        gap:5px;
+    }
+
 }
